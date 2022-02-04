@@ -18,9 +18,9 @@ class Solution {
                 zero++;
             }
             else if(zero > 0) {
-                int t = nums[i];
+                nums[i - zero] = nums[i];
                 nums[i] = 0;
-                nums[i - zero] = t;
+                
             }
         }
     }
