@@ -9,5 +9,7 @@ class Solution {
                 s = s + address.charAt(i);
         }
         return s;
+        // return address.replace(".", "[.]");
+        // Very Simple -- But don't use it
     }
 }
