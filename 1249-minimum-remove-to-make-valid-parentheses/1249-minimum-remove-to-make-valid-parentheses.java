@@ -14,8 +14,6 @@ class Solution {
                     st.pop();
                 }
             }
-            else
-                continue;
         }
         int i = 0;
         if(st.isEmpty()) {
