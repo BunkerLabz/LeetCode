@@ -1,9 +1,9 @@
 class MyQueue {
     Stack<Integer> s1 = new Stack<>();
     Stack<Integer> s2 = new Stack<>();
-    public MyQueue() {
+//     public MyQueue() {
         
-    }
+//     }
     
     public void push(int x) {
         while(!s1.isEmpty()) {
