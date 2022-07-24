@@ -13,3 +13,26 @@ class Solution {
         return false;
     }
 }
+
+// Approach 2 Binary Search
+
+// class Solution {
+//     public boolean searchMatrix(int[][] matrix, int target) {
+//         int r = matrix.length, c = matrix[0].length;
+//         int l = 0;
+//         int h = (r * c) - 1;
+//         int mid = 0;
+//         while(l <= h) {
+//             mid = (l + (h - l)) / 2;
+//             if(matrix[mid / c][mid % c] == target) {
+//                 return true;
+//             }
+//             else if(matrix[mid / c][mid %c] < target) {
+//                 l = mid + 1;
+//             }
+//             else
+//                 h = mid - 1;
+//         }
+//         return false;
+//     }
+// }
