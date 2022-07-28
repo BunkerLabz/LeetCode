@@ -4,12 +4,12 @@ public class Solution {
             return false;
         }
         int[] count = new int[26];
-        for(int i = 0; i < s.length(); i++){
+        for(int i = 0; i < s.length(); i++) {
             count[s.charAt(i) - 'a']++;
             count[t.charAt(i) - 'a']--;
         }
         for(int i : count){
-            if(i != 0){
+            if(i != 0) {
                 return false;
             }
         }
