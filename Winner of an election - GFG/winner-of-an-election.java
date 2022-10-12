@@ -53,7 +53,6 @@ class Solution
             }
             else if(map.get(name) == max) {
                 if(high.compareTo(name) < 0) {
-                    
                 }
                 else {
                     high = name;
@@ -63,9 +62,7 @@ class Solution
         res[0] = high;
         res[1] = Integer.toString(max);
         return res;
-        // System.out.println(map);
-        // String s[] = {"jhon", "4"};
-        // return s;
+
     }
 }
 
