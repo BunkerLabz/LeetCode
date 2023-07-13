@@ -40,18 +40,18 @@ class Solution {
         // Code here
         boolean visited[] = new boolean[V];
         visited[0] = true;
-        ArrayList<Integer> ls = new ArrayList<>();
-        dfs(0, visited, adj, ls);
-        return ls;
+        ArrayList list = new ArrayList<>();
+        dfs(0, visited, adj, list);
+        return list;
     }
     
-    private void dfs(int node, boolean visited[], ArrayList<ArrayList<Integer>> adj, ArrayList<Integer> ls) {
+    private void dfs(int node, boolean visited[], ArrayList<ArrayList<Integer>> adj, ArrayList<Integer> list) {
         visited[node] = true;
-        ls.add(node);
+        list.add(node);
         
-        for(Integer i: adj.get(node)) {
+        for(Integer i : adj.get(node)) {
             if(visited[i] == false) {
-                dfs(i, visited, adj, ls);
+                dfs(i, visited, adj, list);
             }
         }
     }
